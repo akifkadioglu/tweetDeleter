@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Remove Video Tweets",
-    "version": "1.0",
+    "version": "1.0.2",
     "description": "video oynatıcılarını otomatik olarak kaldırır.",
     "icons": {
       "16": "icons/icon16.png",

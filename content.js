@@ -7,12 +7,20 @@ function removeTweetPhotos() {
       steps--;
     }
     if (parent) {
-      parent.remove();
+      const separator = document.createElement('div');
+      separator.setAttribute('role', 'separator');
+      separator.style.margin = '15px';
+      separator.style.fontFamily = 'Roboto, sans-serif';
+      separator.innerHTML = "<p>This tweet contains a video.</p>";
+      parent.replaceWith(separator);
     }
   });
 }
+
 const observer = new MutationObserver(() => {
   removeTweetPhotos();
 });
+
 observer.observe(document.body, { childList: true, subtree: true });
+
 removeTweetPhotos();
