@@ -1,10 +1,6 @@
 # TweetDeleter Chrome Eklentisi
 
-TweetDeleter, Twitter hesabınızdaki yalnızca video içeriklerini otomatik olarak silen bir Chrome eklentisidir.
-
-## Özellikler
-- Hesabınızdaki video içeren tweetleri tespit eder ve otomatik olarak siler.
-- Kolay kullanım ve hızlı işlem kapasitesi.
+TweetDeleter, Twitterda içerikleri filtreleyen bir Chrome eklentisidir.
 
 ## Kurulum
 
