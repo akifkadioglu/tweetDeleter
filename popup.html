@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tweet Filter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+      }
+      label {
+        display: block;
+        margin: 5px 0;
+      }
+      .checkbox-container {
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="checkbox-container">
+      <h2>Tweet Filter</h2>
+      <label>
+        <input type="checkbox" id="showPhotos" />
+        Show photos
+      </label>
+      <label>
+        <input type="checkbox" id="showVideos" />
+        Show videos
+      </label>
+      <label>
+        <input type="checkbox" id="showMedialess" />
+        Show medialess tweets
+      </label>
+      <label>
+        <b>Refresh the page to activate the filter</b>
+      </label>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

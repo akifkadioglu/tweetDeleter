@@ -1,18 +1,27 @@
 {
-    "manifest_version": 3,
-    "name": "Remove Video Tweets",
-    "version": "1.0.2",
-    "description": "video oynatıcılarını otomatik olarak kaldırır.",
-    "icons": {
-      "16": "icons/icon16.png",
-      "32": "icons/icon32.png"
-    },
-    "content_scripts": [
-      {
-        "matches": ["https://x.com/*"],
-        "js": ["content.js"]
-      }
-    ],
-    "permissions": ["activeTab"]
-  }
-  
+  "manifest_version": 3,
+  "name": "Tweet Filter",
+  "version": "1.0.3",
+  "description": "This extension filters tweets",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ]
+}
